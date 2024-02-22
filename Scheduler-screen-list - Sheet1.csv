@@ -1,0 +1,92 @@
+Screen,Path,Features
+Filter Criteria,Scheduler -> Filter DD,"- Provides the function to create a criteria suitable as per the user preference
+  using various Dropdowns such as name , days , tags etc..
+-Also provider filter fields for precise outcomes such as Slot interval,color appointment by,
+ ability to see cancelled appointments, color, event by
+-Provides List of columns that the user would like to see in the search result.
+-Also provides the function of Selecting providers and locations that leads to another screen.
+"
+Scheduler Filter,Scheduler -> Filter DD -> Select Provider&loc,"-Functionality of selecting specific facilities and providers for precise and expected filtering.
+-Also has a filter dropdown within the screen to filter the list of facilities and providers."
+Find a Slot,Scheduler -> Find a slot for appointment,"-The main fucntion of this screen is to check the availibility of an appointment slot and book the slot accordingly.\
+-The screen itself has various criteria available such as patient name, location,Date and timeframe of required slot , providers
+ Reason for visit, type of visit.
+-The top part of the screen features all the deatails of the patient including a navigation to patient main profile.
+ Other information includes DOB,language, contact, dates ,balance.
+-various tags can also be appiled to the patient through this screen. Also there is an option to print the facesheet of the patient.
+-The main section of the screen will show the result matched with the applied criteria.
+-It features a calender for better movement between days, and a list of morning and afternoon availibility of the slot as per the criteria set.
+-The user can book the appointment accordingly and can also set appointment details as well through this screen."
+"Book Appointment
+/Appointment details","Scheduler -> Find slot -> Book appointment
+Scheduler -> Appointment details","-The function of this screen is to provide details and confirming the booked slot of appointment.
+-The top part of the screen features all the necessary information of the patient inclduing Patient notes and alerts. 
+-Here the LHS featues a list of dropdown and information criteria required for the booking of the appointment.
+ Such as Date,timeframe,facility,provider,RFV,Room,RFV code, resources etc.
+-He middle section of the screen features Insurance details of the patient , Here the user can Add insurance get the 
+ details of the cureent insurance including checking the eligibility of the current insurance, Priority ,CoPay.
+-The user can also edit the details of the each individual insurance.
+-It also has the various forms required to be filled upon booking an appointment.
+-The RHS of the screen features the list of care team and providers to be appointed for the visit."
+Policy Details,Scheduler -> Find slot -> Book appointment -> policy details,"-This screen is to edit the details of the insurance of the patient.
+-It includes information such as Plan, Code, priority, copay,policy time frame, various required documents, subscriber Id.
+-Also features a table containing Maximum out of pocket,Deductible information.
+-Insurance eligibility history can also be viewed from here."
+Eligibility History,Scheduler -> Find slot -> Book appointment -> policy details->eligibility history,-It offers filtering criteria to filter out the eligibility history and probvides a list of past eligibilities.
+Updates,"         
+Scheduler -> Find slot -> Book appointment -> policy details","-This screen is to provide any updates such as in Subscriber ID or copay or table of amount , also provides a list of all the updates added to the policy."
+New Form,Scheduler -> Book Appointment -> Form DD -> + ,"-Offers the ability to create a new form with details and criteria such as Signature,various form fields , insurance details etc.
+-The user can create the form he would like to have easily with this screen."
+Event ,Scheduler -> Add Event,"-This screen offers the ability to add an event in the required time slot.
+-It has many fields to add in details for the event such as organizer,time frame,location,attendees,type,description,files etc.
+-This will mark the chosen timeframe with different color in the scheduler homescreen."
+Advanced Search,Scheduler -> Advanced Search,"-This screen provides an advance view of all the details present in the shceduler screen , provides multiple filteres for precise searching.
+-Filter also has saved criteria feature as well for quick criteria selection.
+-The result will return as a list of filtered appointments alongside all the necessary information of the patient and the appointment"
+Vitals,Scheduler -> Find slot -> Book appointment -> vitals,"-This screen features all the vital information of the patient such as height,BMI,BP etc."
+Superbill,Scheduler -> Find slot -> Book appointment -> superbill,"-superbill screen provides a deatailed outline of the service provided by the facility to the patient.
+-This includes basic details such as service date, location, provider etc to advanced information such as CPTs and ICDs.
+-It also includes insurance details as well , this provides a detailed outlook of the visit."
+Patient,"Scheduler -> Find slot -> Book appointment -> Patient name
+Scheduler -> open patient chart
+",-it navigates to the main patient screen that contains all the available information stored in the patient profile.
+Documents,Scheduler -> Find slot -> Book appointment ->Documents,-it navigates to the documents screen that contains all the stored document for the patient where the user can CRUD all the documents.
+Add Employee Holiday,Scheduler ->More->Employee on leave,-this page offers the ability for user to CRUD employee leaves so that it doesn't colide with appointment booking.
+Scheduler ,Scheduler ,"-The home screen of the scheduler module is the backbone of appointment management of our product.
+-On the LHS it has a calender to quickly navigate between days to find the list of appointments and empty slots for that frame alongside
+ filtering criteria for the appointment Interface filter.
+-The top part of the screen features the information of the current timeframe displayed as well as option to use different formate such 
+ as Days,week,month,7 days,list.
+-There are also buttons to find slots as well as appointment details and advanced search.
+-A print of the appointment timeline can also be accessed through this screen.
+-The more option features the ability to file the holidays of facility as well as employees , alongside that it has the ability to filter cancelled appointments
+ ,hide patient info , slot interval etc.
+-upon right cliking an empty slot reveals the option to shceduler appointment,block slot,reserve and add event.
+-The appointments can be rescheduled just by dragging the colored portion in the interface.
+-Upong right clicking the appointments , A list of useful features appears such as ,
+    -Reminders 
+    -CRUD for the appointment
+    -Check in
+    -Bills
+    -Cancellation/Missed."
+Info ,Scheduler -> i button on aapointment,"-this screen provides an overview of the appointment such as insurance , patient contact ,status ,notes ,primary care physician."
+Employee availibility,Setups -> Scheduler -> Employee availibility,"-this setup screen lists the availibility and the leaves of the selected employee.
+-It includes the ability to edit availibility and leaves of any particular employee.
+-Employees can be sorted based on the facility and their names.
+-The changes here directly affects the slot availibility in the main scheduler screen."
+Scheduler template ,Setups -> Scheduler -> Scheduler template,"-This setup screen is useful to create a template for selected time frames with selected intervals.
+-It gives the user less redundant approach at scheduling the availibility and appointments."
+Facility Holiday,Setups -> scheduler -> Facility holiday,"-This screen provides the user with the access to book holidays for the facility so that it doesn't colide with
+ any upcoming appointments.
+-It offers a search feature for facility and the user can CRUD holidays for the selected facility."
+Visit Type,Setups -> scheduler -> visit type,"-This setup screen allows user to CRUD the visit type used throughout the scheduler screen.
+-The user can select specific colour and the information alongisde a note to generate the required visit type."
+Visit Status,Setups -> scheduler -> visit status,"-This setup screen comes with the functionality of CRUD for the list visit status such as patient ready,check out etc..
+-The user can select specific color and the information as per his/her liking to create a new visit status."
+Reason For Visit,Setups -> scheduler -> RFV,"-This setup screen has a list of Reason for Visit used throughout the facility.
+-The user can easily create and modify the RFVs as per the liking and the requirements with information such as code,type,color,duration etc."
+Event Type ,Setups -> scheduler -> event type,"-This setup screen has a list of Event types used to book the events through the main shceduler screen , this list can be easily modified by the user as per requirements."
+Appointment reminder preference,Setups -> scheduler -> Apt remidner preference,"-This screen comes with two lists containing appointment status notification and reminders.
+-Both of the list can be modified by the user , this setup is useful for patient reminders and status of appointments."
+Holiday setup ,setups -> scheduler -> holiday setups,-This screen is similer as facility holiday but it also has the ability to file employee holidays so that it doesn't colide with the booked appointments.
+Default availibility,setups -> scheduler -> defualt availibility,-The main function of this display is to set default availibility of all or specified facilities with setups such as From-to times and intervals and the days of operations per week.
